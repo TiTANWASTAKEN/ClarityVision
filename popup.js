@@ -11,8 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     applyFilter('tritanopia');
   });
 });
-document.getElementById('reset').addEventListener('click', () => {
-  resetFilter();
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('reset').addEventListener('click', () => {
+    resetFilter();
+  });
 });
 
   
