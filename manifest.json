@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Color Blind Mode",
+    "version": "1.0",
+    "description": "Apply filters to help color-blind people see websites.",
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
