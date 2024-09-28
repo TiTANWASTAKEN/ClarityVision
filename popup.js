@@ -1,19 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('button.filter-button');
 
-  document.getElementById('protanopia').addEventListener('click', () => {
-    applyFilter('protanopia');
-  });
-
-  document.getElementById('deuteranopia').addEventListener('click', () => {
-    applyFilter('deuteranopia');
-  });
-
-  document.getElementById('tritanopia').addEventListener('click', () => {
-    applyFilter('tritanopia');
-  });
-
-  document.getElementById('reset').addEventListener('click', () => {
-    resetFilter();
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      buttons.forEach(btn => btn.classList.remove('selected'));
+      button.classList.add('selected');
+      if (button.id === 'protanopia') {
+        applyFilter('protanopia');
+      } else if (button.id === 'deuteranopia') {
+        applyFilter('deuteranopia');
+      } else if (button.id === 'tritanopia') {
+        applyFilter('tritanopia');
+      } else if (button.id === 'reset') {
+        resetFilter();
+      }
+    });
   });
   document.getElementById('take-test-btn').addEventListener('click', () => {
     openTestPage();
@@ -45,13 +46,10 @@ function resetFilter() {
 function enhanceColors(type) {
   let filter = '';
   if (type === 'protanopia') {
-  
     filter = 'contrast(1.5) hue-rotate(10deg)';
   } else if (type === 'deuteranopia') {
- 
     filter = 'contrast(1.5) hue-rotate(-20deg)';
   } else if (type === 'tritanopia') {
- 
     filter = 'contrast(1.5) hue-rotate(170deg)';
   }
   document.documentElement.style.filter = filter;
