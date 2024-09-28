@@ -1,4 +1,3 @@
-Here's a GitHub description for the **"ClarityVision: Color Blind Assistant"** extension:
 
 ---
 
