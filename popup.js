@@ -1,18 +1,20 @@
-document.getElementById('protanopia').addEventListener('click', () => {
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('protanopia').addEventListener('click', () => {
     applyFilter('protanopia');
   });
-  
+
   document.getElementById('deuteranopia').addEventListener('click', () => {
     applyFilter('deuteranopia');
   });
-  
+
   document.getElementById('tritanopia').addEventListener('click', () => {
     applyFilter('tritanopia');
   });
-  
-  document.getElementById('reset').addEventListener('click', () => {
-    resetFilter();
-  });
+});
+document.getElementById('reset').addEventListener('click', () => {
+  resetFilter();
+});
+
   
   function applyFilter(type) {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
