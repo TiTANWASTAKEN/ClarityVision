@@ -1,4 +1,3 @@
-Here's a sample **README.md** file that outlines the purpose of your extension, features, and pipeline improvements. It also includes some prompts on how to use the extension.
 
 ---
 
