@@ -20,7 +20,7 @@
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/clarity-vision-extension.git
+   git clone https://github.com/TiTANWASTAKEN/clarity-vision-extension.git
    ```
 
 2. Open **Chrome**, go to `chrome://extensions/`, and enable **Developer mode**.
