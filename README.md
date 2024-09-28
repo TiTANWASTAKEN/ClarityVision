@@ -4,7 +4,7 @@
 # Clarity Vision - Chrome Extension for Color Blindness
 
 **Version:** 1.1  
-**Description:** Clarity Vision is a Chrome extension designed to help individuals with color blindness view web content with improved clarity. The extension offers different filters for Protanopia, Deuteranopia, and Tritanopia, simulating how color-blind users see the web. It also includes a reset option to remove the applied filters.
+**Description:** Clarity Vision is a Chrome extension designed to help individuals with color blindness view web content with improved clarity. The extension offers different filters for Protanopia, Deuteranopia, and Tritanopia,  enhancing color perception for users with color blindness. It also includes a reset option to remove the applied filters.
 
 ## Features
 
