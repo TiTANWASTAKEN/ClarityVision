@@ -107,17 +107,6 @@ Below are some planned pipeline improvements to further enhance the functionalit
 
 5. You can now make changes to the code and reload the extension.
 
-## Contributing
-
-Contributions are welcome! If you’d like to contribute, please fork the repository and create a pull request. Make sure to follow the style guide and include tests for new features.
-
-1. Fork the repo
-2. Create a new branch (`git checkout -b feature/your-feature-name`)
-3. Commit your changes (`git commit -m 'Add new feature'`)
-4. Push to the branch (`git push origin feature/your-feature-name`)
-5. Create a pull request
-
-## License
 
 This project is licensed under the MIT License.
 
