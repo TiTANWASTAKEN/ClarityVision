@@ -11,12 +11,14 @@
       "128": "icon.png"
     }
   },
-  "background": {
-    "service_worker": "background.js"
-  },
   "permissions": [
     "storage",
     "scripting",
-    "tabs"
+    "tabs",
+    "activeTab"
+     // You can specify specific domains like Udemy if needed
+  ],
+  "host_permissions": [
+    "https://*/*"
   ]
 }
