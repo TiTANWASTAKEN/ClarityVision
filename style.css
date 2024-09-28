@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    width: 200px;
+    width: 300px; /* Increased width for better spacing */
     text-align: center;
     background-color: #f9f9f9; /* Light background for contrast */
     padding: 20px; /* Padding around the content */
@@ -8,10 +8,15 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+h3 {
+    color: #333; /* Dark text for contrast */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
 button {
     margin: 10px 0;
     padding: 12px; /* Slightly larger padding */
-    width: 100%;
+    width: calc(100% - 20px); /* Adjust width for padding */
     background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Gradient background */
     border: none; /* Remove default border */
     color: #333; /* Default text color */
@@ -23,9 +28,9 @@ button {
 }
 
 button.selected {
-    background: linear-gradient(145deg, #007bff, #0056b3); /* Gradient for selected button */
+    background: linear-gradient(145deg, #28a745, #218838); /* Green gradient for selected button */
     color: white; /* Selected text color */
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5), 0 0 20px rgba(0, 123, 255, 0.5); /* Shadow and glow effect */
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.5), 0 0 20px rgba(40, 167, 69, 0.5); /* Shadow and glow effect */
     transform: scale(1.1); /* Grow size when selected */
 }
 
@@ -35,13 +40,25 @@ button:hover {
     transform: translateY(-2px); /* Slight upward movement */
 }
 
-/* Maintain hover effect on selected button */
 button.selected:hover {
-    background: linear-gradient(145deg, #007bff, #0056b3); /* Keep selected gradient */
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5), 0 0 20px rgba(0, 123, 255, 0.5); /* Keep the glow effect */
+    background: linear-gradient(145deg, #28a745, #218838); /* Keep selected gradient */
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.5), 0 0 20px rgba(40, 167, 69, 0.5); /* Keep the glow effect */
 }
 
-/* Remove focus outline but ensure it stays blue when selected */
 button:focus {
     outline: none; /* Remove the default outline */
 }
+
+.filter-button {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center content */
+    padding: 12px; /* Maintain padding for buttons */
+}
+
+.filter-button i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 20px; /* Icon size */
+    line-height: 1; /* Ensures icons align properly with text */
+}
+
