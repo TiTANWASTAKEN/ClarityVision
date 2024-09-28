@@ -27,5 +27,3 @@ Here's a GitHub description for the **"ClarityVision: Color Blind Assistant"** e
 4. Select the cloned project folder.
 
 ---
-
-Feel free to modify the repository link once you create it!
