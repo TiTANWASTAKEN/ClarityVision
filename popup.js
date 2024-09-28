@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Attach event listeners for buttons
+
   document.getElementById('protanopia').addEventListener('click', () => {
     applyFilter('protanopia');
   });
@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('reset').addEventListener('click', () => {
     resetFilter();
   });
+  document.getElementById('take-test-btn').addEventListener('click', () => {
+    openTestPage();
+  });
 });
 
 function applyFilter(type) {
@@ -27,6 +30,8 @@ function applyFilter(type) {
   });
 }
 
+
+
 function resetFilter() {
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     chrome.scripting.executeScript({
@@ -36,17 +41,17 @@ function resetFilter() {
   });
 }
 
-// New filter functions focused on enhancing color visibility
+
 function enhanceColors(type) {
   let filter = '';
   if (type === 'protanopia') {
-    // Increase contrast and change hue for red-green differentiation
+  
     filter = 'contrast(1.5) hue-rotate(10deg)';
   } else if (type === 'deuteranopia') {
-    // Enhance contrast for green spectrum and adjust hue for better separation
+ 
     filter = 'contrast(1.5) hue-rotate(-20deg)';
   } else if (type === 'tritanopia') {
-    // Enhance blue-yellow distinction
+ 
     filter = 'contrast(1.5) hue-rotate(170deg)';
   }
   document.documentElement.style.filter = filter;
@@ -54,4 +59,8 @@ function enhanceColors(type) {
 
 function resetColorEnhancement() {
   document.documentElement.style.filter = 'none';
+}
+function openTestPage() {
+  const testPageUrl = 'https://enchroma.com/pages/test';  // TODO - Replace with test website once that is done 
+  chrome.tabs.create({ url: testPageUrl });
 }
