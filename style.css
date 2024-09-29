@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 320px; /* Responsive width for different screens */
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h3 {
+    color: #333; /* Dark text for contrast */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Button Styles */
+button {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%; /* Full-width buttons */
+    background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Gradient background */
+    border: none; /* Remove default border */
+    color: #333; /* Default text color */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Increased font size */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover Effects */
+button:hover {
+    background: linear-gradient(145deg, #e0e0e0, #d0d0d0); /* Hover gradient effect */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.8); /* Glow effect on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+}
+
+/* Selected Button Style */
+button.selected {
+    background: linear-gradient(145deg, #28a745, #218838); /* Green gradient for selected button */
+    color: white; /* Selected text color */
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.5), 0 0 20px rgba(40, 167, 69, 0.5); /* Shadow and glow effect */
+    transform: scale(1.1); /* Grow size when selected */
+}
+
+/* Focus Effects */
+button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Focus glow */
+}
+
+/* Button Layout and Icons */
+.filter-button {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 12px;
+}
+
+.filter-button i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 20px; /* Icon size */
+    line-height: 1; /* Ensures icons align properly with text */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 400px) {
+    body {
+        padding: 10px; /* Reduce padding on small screens */
+    }
+
+    button {
+        font-size: 14px; /* Smaller font size on mobile */
+        padding: 10px; /* Adjust padding */
+    }
+}
