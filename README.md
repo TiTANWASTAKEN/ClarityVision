@@ -108,8 +108,6 @@ Below are some planned pipeline improvements to further enhance the functionalit
 5. You can now make changes to the code and reload the extension.
 If you'd like contributors to push their changes to the **`master` branch** instead of the **`main` branch**, while keeping the **`main` branch** sanitized and stable for releases or production, you can update your **contributing guidelines** to clarify this process. This is a common workflow where **`master`** serves as a working branch, and **`main`** is reserved for stable releases or deployments.
 
-Here’s how you can update the contributing section in your `README.md`:
-
 ---
 
 ## Contributing
