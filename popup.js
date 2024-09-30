@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+  
   document.getElementById('take-test-btn').addEventListener('click', () => {
     openTestPage();
   });
@@ -31,8 +32,6 @@ function applyFilter(type) {
   });
 }
 
-
-
 function resetFilter() {
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     chrome.scripting.executeScript({
@@ -41,7 +40,6 @@ function resetFilter() {
     });
   });
 }
-
 
 function enhanceColors(type) {
   let filter = '';
@@ -58,7 +56,8 @@ function enhanceColors(type) {
 function resetColorEnhancement() {
   document.documentElement.style.filter = 'none';
 }
+
 function openTestPage() {
-  const testPageUrl = 'https://enchroma.com/pages/test';  // TODO - Replace with test website once that is done 
+  const testPageUrl = 'https://enchroma.com/pages/test'; // TODO - Replace with test website once that is done 
   chrome.tabs.create({ url: testPageUrl });
 }
