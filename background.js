@@ -1,3 +1,4 @@
+
 chrome.commands.onCommand.addListener((command) => {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       const tabId = tabs[0].id;
@@ -44,4 +45,8 @@ chrome.commands.onCommand.addListener((command) => {
   function resetFilter() {
     document.documentElement.style.filter = 'none';
   }
+
+chrome.runtime.onInstalled.addListener(() => {
+    console.log('Clarity Vision extension installed.');
+  });
   
