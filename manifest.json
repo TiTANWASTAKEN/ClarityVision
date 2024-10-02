@@ -1,31 +1,39 @@
 {
   "manifest_version": 3,
   "name": "Clarity Vision",
-  "version": "1.1",
-  "description": "A Chrome extension to help color-blind individuals see web pages better.",
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icon.png",
-      "48": "icon.png",
-      "128": "icon.png"
-    }
+  "version": "1.2",
+  "background": {
+    "service_worker": "background.js"
   },
   "permissions": [
     "storage",
     "scripting",
-    "tabs",
-    "activeTab"
-  ],
-  "host_permissions": [
-    "https://*/*"
+    "tabs"
   ],
   "commands": {
-    "_execute_action": {
+    "toggle-protanopia": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Z" 
+        "default": "Ctrl+Shift+P"
       },
-      "description": "Open Clarity Vision"
+      "description": "Toggle Protanopia filter"
+    },
+    "toggle-deuteranopia": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+D"
+      },
+      "description": "Toggle Deuteranopia filter"
+    },
+    "toggle-tritanopia": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+T"
+      },
+      "description": "Toggle Tritanopia filter"
+    },
+    "reset-filters": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+R"
+      },
+      "description": "Reset all filters"
     }
   }
 }
