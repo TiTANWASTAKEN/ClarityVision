@@ -1,0 +1,14 @@
+{
+  "extension_name": {
+    "message": "Clarity Vision",
+    "description": "El nombre de la extensión"
+  },
+  "welcome_message": {
+    "message": "Bienvenido a Clarity Vision",
+    "description": "Un mensaje de bienvenida para el usuario"
+  },
+  "button_label": {
+    "message": "Aplicar filtro",
+    "description": "Etiqueta para el botón de filtro"
+  }
+}

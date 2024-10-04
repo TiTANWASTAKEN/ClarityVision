@@ -24,7 +24,7 @@ chrome.commands.onCommand.addListener((command) => {
       } else if (command === 'reset-filters') {
         chrome.scripting.executeScript({
           target: { tabId: tabId },
-          function: resetFilter
+          function: resetColorEnhancement
         });
       }
     });
@@ -42,7 +42,7 @@ chrome.commands.onCommand.addListener((command) => {
     document.documentElement.style.filter = filter;
   }
   
-  function resetFilter() {
+  function resetColorEnhancement() {
     document.documentElement.style.filter = 'none';
   }
 

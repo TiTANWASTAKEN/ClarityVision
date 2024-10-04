@@ -1,3 +1,4 @@
+/* Light Mode (Default) */
 body {
     font-family: Arial, sans-serif;
     width: 320px; /* Increased width slightly for better spacing */
@@ -63,4 +64,60 @@ button:focus {
 .filter-button i {
     margin-right: 10px; /* Increased space for better readability */
     font-size: 22px; /* Slightly larger icons */
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1e1e1e; /* Dark background for Dark Mode */
+    color: #f0f0f0; /* Light text color for contrast */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Light shadow in dark mode */
+}
+
+h3.dark-mode {
+    color: #f0f0f0; /* Light text color for headings */
+}
+
+button.dark-mode {
+    background: linear-gradient(145deg, #333, #444); /* Dark gradient for Dark Mode */
+    color: #f0f0f0; /* Light text color for buttons */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Light shadow for buttons in Dark Mode */
+}
+
+button.dark-mode.selected {
+    background: linear-gradient(145deg, #28a745, #218838); /* Keep selected button style in Dark Mode */
+    color: white; /* White text for selected button */
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.5), 0 0 20px rgba(40, 167, 69, 0.5); /* Glow and shadow effect */
+}
+
+button.dark-mode:hover {
+    background: linear-gradient(145deg, #444, #555); /* Dark hover effect */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.8); /* Light blue glow on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+}
+
+button.dark-mode.selected:hover {
+    background: linear-gradient(145deg, #28a745, #218838); /* Maintain green gradient for selected button */
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.5), 0 0 20px rgba(40, 167, 69, 0.5); /* Keep glow effect */
+}
+
+/* Media Query to Follow System Dark Mode Preferences */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1e1e;
+        color: #f0f0f0;
+    }
+
+    button {
+        background: linear-gradient(145deg, #333, #444); /* Dark gradient for buttons */
+        color: #f0f0f0; /* Light text color */
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Light shadow */
+    }
+
+    button:hover {
+        background: linear-gradient(145deg, #444, #555); /* Dark hover effect */
+    }
+
+    button.selected {
+        background: linear-gradient(145deg, #28a745, #218838); /* Keep selected button style */
+    }
 }
