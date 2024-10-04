@@ -2,6 +2,7 @@
   "manifest_version": 3,
   "name": "Clarity Vision",
   "version": "1.2",
+<<<<<<< Updated upstream
 
   "description": "A Chrome extension to help color-blind individuals see web pages better with enhanced color filters.",
   "action": {
@@ -27,6 +28,24 @@
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
+=======
+  "description": "A Chrome extension to help color-blind individuals see web pages better and allow switching between light and dark mode.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": [
+    "storage",     // To store user preferences like Dark Mode
+    "scripting",   // To apply scripts for filters
+    "tabs"         // To interact with the current active tab
+  ],
+  "background": {
+    "service_worker": "background.js"   // Handles background scripts for commands
+>>>>>>> Stashed changes
   },
   "commands": {
     "toggle-protanopia": {
