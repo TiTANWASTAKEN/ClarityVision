@@ -1,64 +1,66 @@
 body {
     font-family: Arial, sans-serif;
-    width: 300px; /* Increased width for better spacing */
+    width: 320px; /* Increased width slightly for better spacing */
     text-align: center;
-    background-color: #f9f9f9; /* Light background for contrast */
-    padding: 20px; /* Padding around the content */
-    border-radius: 10px; /* Rounded corners for the container */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #f0f0f0; /* Softer light background for improved contrast */
+    padding: 20px;
+    border-radius: 12px; /* Slightly larger rounded corners for a smoother look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
+    margin: 0 auto; /* Center the container */
 }
 
 h3 {
-    color: #333; /* Dark text for contrast */
-    margin-bottom: 20px; /* Space below the heading */
+    color: #222; /* Slightly darker text for better contrast */
+    margin-bottom: 18px; /* Adjusted space below heading */
+    font-size: 1.4em; /* Improved readability with larger font */
 }
 
 button {
-    margin: 10px 0;
-    padding: 12px; /* Slightly larger padding */
-    width: calc(100% - 20px); /* Adjust width for padding */
-    background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Gradient background */
-    border: none; /* Remove default border */
-    color: #333; /* Default text color */
-    border-radius: 8px; /* Rounded corners */
-    font-size: 16px; /* Increased font size */
+    margin: 12px 0;
+    padding: 14px; /* Larger padding for improved click area */
+    width: calc(100% - 24px); /* Adjusted width for even padding */
+    background: linear-gradient(145deg, #e8e8e8, #ffffff); /* Softer gradient for modern look */
+    border: none;
+    color: #333;
+    border-radius: 10px;
+    font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s ease; /* Smooth transition for all properties */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-button.selected {
-    background: linear-gradient(145deg, #28a745, #218838); /* Green gradient for selected button */
-    color: white; /* Selected text color */
-    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.5), 0 0 20px rgba(40, 167, 69, 0.5); /* Shadow and glow effect */
-    transform: scale(1.1); /* Grow size when selected */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease; /* Specific transitions for better performance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 button:hover {
-    background: linear-gradient(145deg, #e0e0e0, #d0d0d0); /* Hover gradient effect */
-    box-shadow: 0 0 15px rgba(0, 123, 255, 0.8); /* Glow effect on hover */
-    transform: translateY(-2px); /* Slight upward movement */
+    background: linear-gradient(145deg, #dcdcdc, #f8f8f8); /* Softer hover effect */
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.6); /* Subtle glow for hover state */
+    transform: translateY(-2px); /* Smooth hover effect */
+}
+
+button.selected {
+    background: linear-gradient(145deg, #28a745, #1e7e34); /* Stronger green for the selected button */
+    color: white;
+    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.6), 0 0 18px rgba(40, 167, 69, 0.6); /* Enhanced shadow for emphasis */
+    transform: scale(1.05); /* Slightly smaller scale for a more natural effect */
 }
 
 button.selected:hover {
-    background: linear-gradient(145deg, #28a745, #218838); /* Keep selected gradient */
-    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.5), 0 0 20px rgba(40, 167, 69, 0.5); /* Keep the glow effect */
+    background: linear-gradient(145deg, #28a745, #1e7e34);
+    box-shadow: 0 6px 18px rgba(40, 167, 69, 0.7), 0 0 25px rgba(40, 167, 69, 0.6); /* More subtle hover on selected */
+    transform: scale(1.08); /* Slight hover increase */
 }
 
 button:focus {
-    outline: none; /* Remove the default outline */
+    outline: none; /* Retaining focus improvement */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4); /* Visible focus ring for accessibility */
 }
 
 .filter-button {
     display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center content */
-    padding: 12px; /* Maintain padding for buttons */
+    align-items: center;
+    justify-content: center;
+    padding: 14px; /* Slightly larger padding */
 }
 
 .filter-button i {
-    margin-right: 8px; /* Space between icon and text */
-    font-size: 20px; /* Icon size */
-    line-height: 1; /* Ensures icons align properly with text */
+    margin-right: 10px; /* Increased space for better readability */
+    font-size: 22px; /* Slightly larger icons */
 }
-

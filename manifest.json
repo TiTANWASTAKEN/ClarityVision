@@ -10,17 +10,14 @@
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
-    }
-  "background": {
-    "service_worker": "background.js"
-  },
+    },
   "permissions": [
     "storage",
     "scripting",
     "tabs",
     "activeTab"
   ],
-  "background": {
+  "background ": {
     "service_worker": "background.js"
   },
   "host_permissions": [
@@ -60,4 +57,4 @@
   "background": {
     "service_worker": "background.js"
   }
-}
+}}
