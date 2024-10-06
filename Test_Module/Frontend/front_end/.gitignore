@@ -13,6 +13,8 @@ node_modules/
 # Output directories
 dist/
 dist-ssr/
+build/
+out/
 
 # Local environment variables and configuration
 *.local
@@ -46,9 +48,25 @@ Thumbs.db
 # Coverage reports (for testing)
 coverage/
 
-# TypeScript cache
+# TypeScript cache (if applicable)
 *.tsbuildinfo
 
-# Other output or compiled directories (e.g., build folders)
+# Tailwind-generated files (optional if you're using JIT mode or generating .map files)
+*.css.map
+*.css.d.ts
+.tailwindcache/
+
+# Other output or compiled directories
 build/
 out/
+temp/
+
+# Ignore Next.js build output (if you're using Next.js)
+.next/
+
+# Ignore Expo (React Native) directories (optional if applicable)
+.expo/
+.expo-shared/
+
+# Ignore IntelliJ IDEA files
+.idea/
