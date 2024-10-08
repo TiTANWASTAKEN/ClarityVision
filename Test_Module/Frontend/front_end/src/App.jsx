@@ -5,6 +5,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Hero />
       <Footer />
     </>
   );
